@@ -1,12 +1,11 @@
 package main
 
 import (
-	"Leetcode/leetcode"
 	"fmt"
 )
 
 func main() {
-	str := "pwwkew"
+	// str := "pwwkew"
 
 	// for i, val := range str {
 	// 	if i != 0 {
@@ -15,6 +14,12 @@ func main() {
 	// 	fmt.Printf("i: %v, val: %v, type: %T", str[i], val, val)
 	// }
 
-	result := leetcode.LengthOfLongestSubstring(str)
-	fmt.Println(result)
+	str1 := "({})"
+
+	for _, val := range str1 {
+		fmt.Println(string(val))
+	}
+
+	// result := leetcode.LengthOfLongestSubstring(str)
+	// fmt.Println(result)
 }
