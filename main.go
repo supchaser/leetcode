@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	coderun.Nine()
+	coderun.Ten()
 }
