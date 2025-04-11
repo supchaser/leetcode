@@ -1,9 +1,7 @@
 package main
 
-import (
-	"Leetcode/coderun"
-)
+import "Leetcode/coderun"
 
 func main() {
-	coderun.Func155()
+	coderun.Func187()
 }
