@@ -1,6 +1,9 @@
 package coderun
 
-import "fmt"
+import (
+	"fmt"
+	"slices"
+)
 
 func Func187() {
 	var T int // T - число тестов, n - количество лежаков
@@ -20,12 +23,12 @@ func Func187() {
 			sunbedRatings[i] = a
 		}
 
+		slices.Sort(sunbedRatings[:])
+
 		temp := sunbedRatings[1] ^ sunbedRatings[2]
 		for i := 1; i < len(sunbedRatings)-1; i++ {
-			for j := i + 1; j < len(sunbedRatings); j++ {
-				if (sunbedRatings[i] ^ sunbedRatings[j]) < temp {
-					temp = sunbedRatings[i] ^ sunbedRatings[j]
-				}
+			if (sunbedRatings[i] ^ sunbedRatings[i+1]) < temp {
+				temp = sunbedRatings[i] ^ sunbedRatings[i+1]
 			}
 		}
 
