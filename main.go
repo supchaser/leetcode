@@ -3,5 +3,5 @@ package main
 import "Leetcode/coderun"
 
 func main() {
-	coderun.Func204()
+	coderun.Func42back1()
 }
